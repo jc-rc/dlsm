@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ph-text::placeholder{
+  font-style: italic;
+}
+
+.truncado{
+  width: 150px;
+ 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scroll-pills{
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#offcanvas-mobile, #offcanvas-desk{
+  width: 100vw;
+}

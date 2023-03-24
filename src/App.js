@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './Components/Header';
+import TermList from './Components/TermList';
+import Pills from './Components/Pills';
+import Offcanvas from './Components/Offcanvas';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid mt-4">
+     <div className="row justify-content-center" >
+      <Header />
+      <div className="" style={{maxWidth: 1000}}>
+        <Pills />
+        <TermList />
+      </div>
+     </div>
+     <Offcanvas />
     </div>
   );
 }
