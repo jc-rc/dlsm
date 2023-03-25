@@ -27,6 +27,15 @@ code {
 .scroll-pills{
   overflow: auto;
   white-space: nowrap;
+  padding-bottom: 0.5rem;
+}
+.scroll-pills::-webkit-scrollbar{
+  height: 5px;
+  width: 5px;
+  border-radius: 5px;
+}
+.scroll-pills::-webkit-scrollbar-thumb{
+  background-color: gray;
 }
 
 #offcanvas-mobile, #offcanvas-desk{

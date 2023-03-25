@@ -6,7 +6,7 @@ import Offcanvas from './Components/Offcanvas';
 
 function App() {
   return (
-    <div className="container-fluid mt-4">
+    <div className="container-fluid pt-4 ">
      <div className="row justify-content-center" >
       <Header />
       <div className="" style={{maxWidth: 1000}}>

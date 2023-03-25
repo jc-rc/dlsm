@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import { useDispatch} from "react-redux"
 import { setSelected } from "../features/sTermSlice"
@@ -16,7 +16,8 @@ function TermCard(props) {
         <div>
             {/* CARD */}
             <div className="card animate__animated animate__fadeIn d-none d-sm-block" data-bs-toggle={"offcanvas"} data-bs-target="#offcanvas-desk" style={{cursor: "pointer"}} onClick={()=> handleClick({props})}>
-                <img src={"https://source.unsplash.com/random"} alt={props.name} className="card-img-top" style={{ maxHeight: 150, objectFit: "cover" }} />
+                <img src={"./giphy.gif"} alt={props.name} className="card-img-top" style={{ maxHeight: 150, objectFit: "cover" }} />
+                {/* <iframe className="img-fluid" src="https://www.youtube.com/embed/pn_gJfVibx4?start=38&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
                 <div className="card-body">
                     <p className="h5 card-title">{props.name}</p>
                     <p className="card-text small text-truncate">{props.definition}</p>
@@ -55,7 +56,7 @@ function TermCard(props) {
                 </ul>
             </div>
             {/* CARD-HORIZONTAL*/}
-            <div className="border rounded d-block d-sm-none animate__animated animate__backInLeft" data-bs-toggle={"offcanvas"} data-bs-target="#offcanvas-mobile" onClick={()=> handleClick({props})} >
+            <div className="border rounded d-block d-sm-none animate__animated animate__backInLeft" data-bs-toggle={"offcanvas"} data-bs-target="#offcanvas-mobile" style={{cursor: "pointer"}} onClick={()=> handleClick({props})} >
                 <div className="row g-0 d-flex align-items-center" >
                     <div className="col-9">
                         <div className="card-body px-2">
@@ -91,7 +92,7 @@ function TermCard(props) {
                         </div>
                     </div>
                     <div className="col-3">
-                        <img src={"https://source.unsplash.com/random"} alt="" className=" rounded-end" style={{ objectFit: "cover", height: 100, width: "100%" }} />
+                        <img src={"./giphy.gif"} alt="" className=" rounded-end" style={{ objectFit: "cover", height: 100, width: "100%" }} />
                     </div>
                 </div>
             </div>
